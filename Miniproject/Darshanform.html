@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate(){
+    
+ let a = document.forms["Darshan"]["hname"].value;
+ let b = document.forms["Darshan"]["hdob"].value;
+ let c = document.forms["Darshan"]["hage"].value;
+ let d = document.forms["Darshan"]["hmob"].value;
+ let e = document.forms["Darshan"]["hmail"].value;
+ let f = document.forms["Darshan"]["hadno"].value;
+ let g = document.forms["Darshan"]["add"].value;
+ let h = document.forms["Darshan"]["hstar"].value;
+ let i = document.forms["Darshan"]["ddate"].value;
+ let j = document.forms["Darshan"]["time"].value;
+ let k = document.forms["Darshan"]["fname"].value;
+ let l = document.forms["Darshan"]["fgen"].value;
+ let m = document.forms["Darshan"]["fdob"].value;
+ let n = document.forms["Darshan"]["fadno"].value;
+ let o = document.forms["Darshan"]["fstar"].value;
+ let p = document.forms["Darshan"]["sname"].value;
+ let q = document.forms["Darshan"]["sgen"].value;
+ let r = document.forms["Darshan"]["sdob"].value;
+ let s = document.forms["Darshan"]["sadno"].value;
+ let t = document.forms["Darshan"]["sstar"].value;
+
+
+    if (a==""){
+      alert("Enter your Name");
+      return false;
+    }
+    if (b==""){
+      alert("Enter your Date of Birth");
+      return false;
+    }
+   if (c==""){
+      alert("Enter your Age");
+      return false;
+    }
+   if (d=="" || d.length !=10 ){
+      alert("Enter your Valid Mobile Number");
+      return false;
+    }
+   if (e==""){
+      alert("Enter your Vaild Email");
+      return false;
+  }
+   if (f==""){
+      alert("Enter Valid Adhar Card Number");
+      return false;
+  }
+  if (g=="" ){
+      alert("Enter your Address");
+      return false;
+    }
+  if (h=="" ){
+      alert("Select your Star");
+      return false;
+    }
+  if (i=="" ){
+      alert("Select your Date of Darshan");
+      return false;
+    }
+  
+  if (k!=""){
+      if (l=="" ){
+      alert("Select Gender for Pilgrim 1");
+      return false;
+    }
+     if (m=="" ){
+      alert("Select DOB for Pilgrim 1");
+      return false;
+    }
+     if (n=="" ){
+      alert("Enter Age for Pilgrim 1");
+      return false;
+    }
+     if (o=="" ){
+      alert("Select for Pilgrim 1");
+      return false;
+    }
+   }
+  if (p!=""){
+      if (q=="" ){
+      alert("Select Gender for Pilgrim 2");
+      return false;
+    }
+     if (r=="" ){
+      alert("Select DOB for Pilgrim 2");
+      return false;
+    }
+     if (s=="" ){
+      alert("Enter Age for Pilgrim 2");
+      return false;
+    }
+     if (t=="" ){
+      alert("Select for Pilgrim 2");
+      return false;
+    }
+   }
+     
+  
+ }
+</script>
+<style>
+ body{
+margin:0;
+padding:0;
+ }
+ img{
+   height:100px;
+   width:100%;
+   padding:0px;
+  }
+nav{
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:Gold;
+}
+nav ul{
+list-style-type:none;
+float:left;
+}
+nav ul li{
+display:inline-block;
+margin-right:30px;
+}
+nav ul li a{
+padding:10px 25px;
+text-decoration:none;
+color:white;
+display:block;
+text-align:center;
+font-weight:700;
+}
+nav ul li a:hover{
+  background-color: GoldenRod;
+  
+}
+marquee{
+  color: GoldenRod;
+  font-size: 20px;
+  padding:0;
+  border: 10px solid gold;
+}
+table {
+  border: 10px solid Gold;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+th {
+  background-color: Gold;
+  color: white;
+}
+</style>
+<body>
+  <div class="bg-image"></div>
+  <img src="https://guruvayurdevaswom.nic.in/GVR-Logo/BannerLogo1.jpg" >
+  <nav><ul>
+  <li><a href="file:///C:/xampp/htdocs/Miniproject/main.html">Home</a></li>
+  
+  <li><a href="file:///C:/xampp/htdocs/Miniproject/Poojatimings.html">Temple Timings</a></li>
+  <li><a href="file:///C:/xampp/htdocs/Miniproject/Vazhipadu.html">Vazhipadu details</a></li>
+  <li><a href="file:///C:/xampp/htdocs/Miniproject/Prasadham.html">Prasadham</a></li>
+  <li><a href="file:///C:/xampp/htdocs/Miniproject/Harinamakeerthanam.html">Harinamakeerthanam</a></li>
+  <li><a href="#about">Login/Signup</a></li>
+  </ul></nav>
+<marquee><pre>ഓം നമോ ഭഗവതേ വാസുദേവായ     OM  NAMO BHAGAVATE VASUDEVAYA    ॐ नमो भगवते वासुदेवाय: </pre></marquee>
+<br>
+<br>
+<div style="display:inline">
+<table>
+<tr>
+<td>
+<table style="size:100%">
+  <form name="Darshan" method="get" action="darsh.php" onsubmit="return validate()">
+
+<table style="size:100%">
+ 
+  <tr><td> Name of the Head Devotee </td>
+  <td> <input type="text" name="hname"></td></tr>
+  <tr><td> Date of Birth </td>
+  <td> <input type="date" name="hdob"></td></tr>
+  <tr><td> Age </td>
+  <td> <input type="number" name="hage"></td></tr>
+  <tr><td> Mobile No </td>
+  <td> <input type="number" name="hmob"></td></tr>
+  <tr><td> Email </td>
+  <td> <input type="email" name="hmail"></td></tr>
+  <tr><td> Aadhar Card No </td>
+  <td> <input type="number" name="hadno"></td></tr>
+  <tr><td> Number of Devotees </td>
+  <td> <input type="number" name="nod"></td></tr>
+  <tr><td> Address </td>
+  <td> <textarea name="add"></textarea></td></tr>
+  <tr><td> Star of the Head Devotee </td>
+  <td> <select name="hstar">
+      <option value="Ashwathi">Ashwathi</option>
+      <option value="Bharani">Bharani</option>
+      <option value="Kaarthika">Kaarthika</option>
+      <option value="Rohini">Rohini</option>
+      <option value="Maheeryam">Maheeryam</option>
+      <option value="Thiruvaathira">Thiruvaathira</option>
+      <option value="Punartham">Punartham</option>
+      <option value="Pooyam">Pooyam</option>
+      <option value="Aayilyam">Aayilyam</option>
+      <option value="Makam">Makam</option>
+      <option value="Pooram">Pooram</option>
+      <option value="Uthram">Uthram</option>
+      <option value="Attham">Attham</option>
+      <option value="Chithra">Chithra</option>
+      <option value="Chothi">Chothi</option>
+      <option value="Vishaakham">Vishaakham</option>
+      <option value="Anizham">Anizham</option>
+      <option value="Thrukketta">Thrukketta</option>
+      <option value="Moolam">Moolam</option>
+      <option value="Pooraadam">Pooraadam</option>
+      <option value="Uthraadam">Uthraadam</option>
+      <option value="Thiruvonam">Thiruvonam</option>
+      <option value="Avittam">Avittam</option>
+      <option value="Chathayam">Chathayam</option>
+      <option value="Poorooruttaathi">Poorooruttaathi</option>
+      <option value="Uthrattaathi">Uthrattaathi</option>
+      <option value="Revathi">Revathi</option>
+   </select></td></tr> 
+   <tr><td> Date of Darshan </td>
+  <td> <input type="date" name="ddate"></td></tr>
+   <tr><td> Time of Darshan </td>
+  <td> <select name="time">
+        <option value="03:00AM">03:00AM</option>
+        <option value="05:00AM">05:00AM</option>
+        <option value="06:00AM">06:00AM</option>
+        <option value="08:00AM">08:00AM</option>
+        <option value="09:00AM">09:00AM</option>
+        <option value="10:00AM">10:00AM</option>
+        <option value="11:00AM">11:00AM</option>
+        <option value="04:00PM">04:00PM</option>
+        <option value="05:00PM">05:00PM</option>
+        <option value="06:00PM">06:00PM</option>
+        <option value="07:00PM">07:00PM</option>
+        <option value="08:00PM">08:00PM</option></td></tr>
+       </select>
+   <table>
+     <tr>
+       <th>Name of the devotee</th>
+       <th>Gender</th>
+       <th>DOB</th>
+       <th>Age</th>
+       <th>Aadhar Card No</th>
+       <th>Star</th>
+     </tr>
+     <tr>
+       <td><input type="text" name="fname"></td>
+       <td><select name="fgen">
+           <option value="Male">Male</option>
+           <option value="Female">Female</option>
+         </select></td>
+       <td><input type="date" name="fdob"></td>
+       <td><input type="number" name="fage"></td>
+       <td><input type="number" name="fadno"></td>
+       <td> <select name="fstar">
+      <option value="">Select your Star</option>
+      <option value="Ashwathi">Ashwathi</option>
+      <option value="Bharani">Bharani</option>
+      <option value="Kaarthika">Kaarthika</option>
+      <option value="Rohini">Rohini</option>
+      <option value="Maheeryam">Maheeryam</option>
+      <option value="Thiruvaathira">Thiruvaathira</option>
+      <option value="Punartham">Punartham</option>
+      <option value="Pooyam">Pooyam</option>
+      <option value="Aayilyam">Aayilyam</option>
+      <option value="Makam">Makam</option>
+      <option value="Pooram">Pooram</option>
+      <option value="Uthram">Uthram</option>
+      <option value="Attham">Attham</option>
+      <option value="Chithra">Chithra</option>
+      <option value="Chothi">Chothi</option>
+      <option value="Vishaakham">Vishaakham</option>
+      <option value="Anizham">Anizham</option>
+      <option value="Thrukketta">Thrukketta</option>
+      <option value="Moolam">Moolam</option>
+      <option value="Pooraadam">Pooraadam</option>
+      <option value="Uthraadam">Uthraadam</option>
+      <option value="Thiruvonam">Thiruvonam</option>
+      <option value="Avittam">Avittam</option>
+      <option value="Chathayam">Chathayam</option>
+      <option value="Poorooruttaathi">Poorooruttaathi</option>
+      <option value="Uthrattaathi">Uthrattaathi</option>
+      <option value="Revathi">Revathi</option>
+   </select></td></tr>
+       <tr>
+       <td><input type="text" name="sname"></td>
+       <td><select name="sgen">
+           <option value="Male">Male</option>
+           <option value="Female">Female</option>
+         </select></td>
+       <td><input type="date" name="sdob"></td>
+       <td><input type="number" name="sage"></td>
+       <td><input type="number" name="sadno"></td>
+       <td> <select name="sstar">
+      <option value="">Select your Star</option>
+      <option value="Ashwathi">Ashwathi</option>
+      <option value="Bharani">Bharani</option>
+      <option value="Kaarthika">Kaarthika</option>
+      <option value="Rohini">Rohini</option>
+      <option value="Maheeryam">Maheeryam</option>
+      <option value="Thiruvaathira">Thiruvaathira</option>
+      <option value="Punartham">Punartham</option>
+      <option value="Pooyam">Pooyam</option>
+      <option value="Aayilyam">Aayilyam</option>
+      <option value="Makam">Makam</option>
+      <option value="Pooram">Pooram</option>
+      <option value="Uthram">Uthram</option>
+      <option value="Attham">Attham</option>
+      <option value="Chithra">Chithra</option>
+      <option value="Chothi">Chothi</option>
+      <option value="Vishaakham">Vishaakham</option>
+      <option value="Anizham">Anizham</option>
+      <option value="Thrukketta">Thrukketta</option>
+      <option value="Moolam">Moolam</option>
+      <option value="Pooraadam">Pooraadam</option>
+      <option value="Uthraadam">Uthraadam</option>
+      <option value="Thiruvonam">Thiruvonam</option>
+      <option value="Avittam">Avittam</option>
+      <option value="Chathayam">Chathayam</option>
+      <option value="Poorooruttaathi">Poorooruttaathi</option>
+      <option value="Uthrattaathi">Uthrattaathi</option>
+      <option value="Revathi">Revathi</option>
+   </select></td><tr><center><td><input type="submit"></center></tr>
+   </table></form>
+   
+<td><centre><img src="https://www.epoojastore.com/image/catalog/devotional-articles-images/2020/april/guruvaurappan.png" style="height:100%;width:100%;"></td>
+   
+
+      
+       
+  </tr>
+  <tr>
